@@ -2,7 +2,7 @@ name: Build and Deploy Python Site
 on:
   workflow_dispatch:          # Manual "Run workflow" button
   schedule:
-    - cron: '28 13 */2 * *'       # Runs every day at 08:00 UTC (we can change this per site)
+    - cron: '27 13 */2 * *'       # Runs every day at 08:00 UTC (we can change this per site)
 jobs:
   build:
     runs-on: ubuntu-latest
