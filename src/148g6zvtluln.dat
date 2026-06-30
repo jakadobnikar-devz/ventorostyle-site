@@ -1,0 +1,48 @@
+<p><strong>Category:</strong> Gear & Tech</p>
+<h1>A Personal Device Security Checklist That Takes One Evening</h1>
+<p>Personal cybersecurity often fails through ordinary gaps: reused passwords, delayed updates, missing backups, weak recovery details, and devices that remain signed in long after they are lost or replaced.</p>
+<p>You do not need to become a security specialist. One focused evening can remove several common weaknesses across your phone, computer, email, and financial accounts.</p>
+<h2>Update operating systems and applications</h2>
+<p>Install pending security updates on phones, computers, browsers, routers, and important apps. Restart devices when required. Enable automatic updates where they are reliable.</p>
+<p>CISA advises keeping software current because manufacturers issue updates when vulnerabilities are found. Remove unsupported software that no longer receives fixes.</p>
+<h2>Secure the primary email account first</h2>
+<p>Email is often the recovery channel for other services. Give it a unique password or passkey and enable multi-factor authentication. Review recovery phone numbers and addresses.</p>
+<p>Check active sessions and sign out devices you do not recognise. Remove old forwarding rules and third-party app access that is no longer needed.</p>
+<h2>Use a password manager</h2>
+<p>A reputable password manager creates and stores unique passwords. Protect the vault with a strong master password and multi-factor authentication. Save recovery information securely offline.</p>
+<p>Do not reuse the master password anywhere else. Change high-priority reused passwords first: email, banking, cloud storage, social accounts, and shopping services.</p>
+<h2>Enable stronger authentication</h2>
+<p>NIST describes multi-factor authentication as combining more than one type of evidence. Authenticator apps, hardware security keys, and passkeys are generally stronger than a password alone.</p>
+<p>Save backup codes in a secure location. Do not approve unexpected login prompts, which may be an attacker attempting to exploit notification fatigue.</p>
+<h2>Review device locks and encryption</h2>
+<p>Use a strong PIN or password and enable biometric unlocking for convenience. Configure a short automatic lock time. Ensure full-device encryption is active; it is enabled by default on many modern devices when a lock code is set.</p>
+<p>Turn on location and remote-wipe features. Test that you can sign into the relevant account from another device.</p>
+<h2>Create a backup you have tested</h2>
+<p>Back up important photos, documents, password-vault recovery information, and work files. Use an automatic cloud backup, an external drive, or both according to sensitivity and budget.</p>
+<p>Open several backed-up files and confirm that restoration is possible. A backup that has never been tested is only an assumption.</p>
+<h2>Audit installed apps and permissions</h2>
+<p>Delete apps you no longer use. Review access to location, microphone, camera, contacts, photos, and background activity. Grant the minimum required for the function.</p>
+<p>Check browser extensions as well. An extension can access substantial browsing data, so remove unfamiliar or abandoned tools.</p>
+<h2>Secure the home router</h2>
+<p>Change default administrator credentials, update firmware, and use modern Wi-Fi encryption. Create a guest network for visitors and consider separating untrusted smart-home devices from computers containing sensitive work.</p>
+<p>Replace routers that no longer receive security updates. Save the configuration details somewhere secure.</p>
+<h2>Review financial and shopping accounts</h2>
+<p>Enable transaction alerts and inspect saved payment methods. Remove cards from retailers you rarely use. Confirm that billing addresses and recovery details are current.</p>
+<p>The <a href="safer-online-shopping-checklist.html">online shopping checklist</a> covers seller verification, payment protection, and return documentation.</p>
+<h2>Prepare for loss or theft</h2>
+<p>Record device serial numbers and keep purchase receipts. Know how to contact your mobile provider, bank, employer, and insurer. Avoid storing unprotected scans of identity documents on the device.</p>
+<p>Configure lock-screen contact information without revealing unnecessary personal data.</p>
+<h2>Reduce phishing risk</h2>
+<p>Do not sign in through links in unexpected emails or texts. Open the official app or type the address directly. Check requests for urgency, payment changes, codes, or confidential information through a separate channel.</p>
+<p>CISA notes that phishing commonly tries to make users click false links, open attachments, or share information. Pausing is a security action.</p>
+<h2>Set a six-month reminder</h2>
+<p>Security settings drift as accounts and devices change. Schedule a short review twice a year and after any lost device, data breach notice, or major account compromise.</p>
+<p>The aim is not perfect protection. It is to make common attacks harder, limit damage, and preserve a reliable recovery path when something goes wrong.</p>
+<h2>Check what happens when you cannot access your phone</h2>
+<p>Many accounts depend on one device for passwords, authentication codes, and recovery. Write a recovery plan that assumes the phone is lost. Keep backup codes, the password-manager recovery method, and key support numbers somewhere secure and separate.</p>
+<h2>Remove old devices from trusted lists</h2>
+<p>Review Apple, Google, Microsoft, social, and banking accounts for remembered browsers and devices. Sign out hardware you sold, recycled, returned to an employer, or no longer recognise. Factory-reset devices before transfer and confirm that activation locks or ownership links are removed correctly.</p>
+<p>This small cleanup reduces the number of forgotten access points an attacker or future owner could use.</p>
+<h2>Keep a brief incident note</h2>
+<p>If an account behaves strangely, record the time, device, alert, and action you took. Clear notes help support teams and reduce repeated guessing during recovery.</p>
+

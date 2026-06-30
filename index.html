@@ -1,0 +1,755 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Ventoro Style | Men’s Style, Health and Modern Living</title>
+    <meta
+        name="description"
+        content="Practical editorial coverage of men’s style, grooming, health, technology, careers and modern living."
+    >
+
+    <link rel="canonical" href="https://ventorostyle.com/">
+
+    <style>
+        :root {
+            --paper: #f4f1ea;
+            --surface: #ffffff;
+            --ink: #171716;
+            --muted: #6e6a63;
+            --accent: #8b4a34;
+            --accent-dark: #643323;
+            --line: #d8d1c5;
+            --soft: #ebe6dc;
+            --serif: Georgia, "Times New Roman", serif;
+            --sans: Arial, Helvetica, sans-serif;
+            --content-width: 1240px;
+            --reading-width: 760px;
+            --radius: 4px;
+            --shadow: 0 18px 50px rgba(23, 23, 22, 0.09);
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            margin: 0;
+            background: var(--paper);
+            color: var(--ink);
+            font-family: var(--sans);
+            font-size: 16px;
+            line-height: 1.6;
+        }
+
+        img {
+            display: block;
+            width: 100%;
+            height: auto;
+        }
+
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        a:focus-visible {
+            outline: 3px solid var(--accent);
+            outline-offset: 4px;
+        }
+
+        .site-header {
+            background: var(--surface);
+            border-bottom: 1px solid var(--line);
+        }
+
+        .masthead {
+            width: min(calc(100% - 40px), var(--content-width));
+            margin: 0 auto;
+            min-height: 92px;
+            display: grid;
+            grid-template-columns: auto 1fr auto;
+            align-items: center;
+            gap: 34px;
+        }
+
+        .logo-link {
+            display: inline-flex;
+            align-items: center;
+        }
+
+        .site-logo {
+            width: auto;
+            height: 43px;
+            max-width: 310px;
+            object-fit: contain;
+        }
+
+        .primary-nav,
+        .utility-nav,
+        .category-nav,
+        .topic-filter {
+            display: flex;
+            align-items: center;
+        }
+
+        .primary-nav {
+            justify-content: center;
+            gap: 30px;
+        }
+
+        .utility-nav {
+            justify-content: flex-end;
+            gap: 18px;
+        }
+
+        .primary-nav a,
+        .utility-nav a {
+            font-size: 0.78rem;
+            font-weight: 700;
+            letter-spacing: 0.09em;
+            text-transform: uppercase;
+        }
+
+        .primary-nav a:hover,
+        .utility-nav a:hover {
+            color: var(--accent);
+        }
+
+        .category-bar {
+            background: var(--ink);
+            color: var(--surface);
+        }
+
+        .category-nav {
+            width: min(calc(100% - 40px), var(--content-width));
+            margin: 0 auto;
+            min-height: 48px;
+            justify-content: center;
+            gap: 36px;
+            overflow-x: auto;
+            white-space: nowrap;
+            scrollbar-width: none;
+        }
+
+        .category-nav::-webkit-scrollbar {
+            display: none;
+        }
+
+        .category-nav a {
+            padding: 14px 0;
+            font-size: 0.78rem;
+            font-weight: 700;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+        }
+
+        .category-nav a:hover {
+            color: #d9a48f;
+        }
+
+        .page-shell {
+            width: min(calc(100% - 40px), var(--content-width));
+            margin: 0 auto;
+        }
+
+        .section-heading {
+            margin: 0;
+            font-family: var(--serif);
+            font-size: clamp(2rem, 4vw, 3.7rem);
+            font-weight: 400;
+            line-height: 1.02;
+            letter-spacing: -0.035em;
+        }
+
+        .section-intro {
+            max-width: 650px;
+            margin: 14px 0 0;
+            color: var(--muted);
+            font-size: 1rem;
+        }
+
+        .hero-section {
+            padding: 54px 0 64px;
+        }
+
+        .hero-link {
+            display: block;
+            background: var(--surface);
+            box-shadow: var(--shadow);
+            transition:
+                transform 180ms ease,
+                box-shadow 180ms ease;
+        }
+
+        .hero-link:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 24px 65px rgba(23, 23, 22, 0.14);
+        }
+
+        .hero-article {
+            display: grid;
+            grid-template-columns: minmax(0, 1.35fr) minmax(340px, 0.65fr);
+            min-height: 590px;
+        }
+
+        .hero-media {
+            min-height: 590px;
+            overflow: hidden;
+        }
+
+        .hero-media img {
+            height: 100%;
+            object-fit: cover;
+            transition: transform 450ms ease;
+        }
+
+        .hero-link:hover .hero-media img {
+            transform: scale(1.025);
+        }
+
+        .hero-copy {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: clamp(36px, 5vw, 72px);
+        }
+
+        .eyebrow {
+            margin: 0 0 22px;
+            color: var(--accent);
+            font-size: 0.76rem;
+            font-weight: 800;
+            letter-spacing: 0.14em;
+            text-transform: uppercase;
+        }
+
+        .hero-title {
+            margin: 0;
+            font-family: var(--serif);
+            font-size: clamp(2.6rem, 5vw, 5.3rem);
+            font-weight: 400;
+            line-height: 0.98;
+            letter-spacing: -0.05em;
+        }
+
+        .hero-excerpt {
+            margin: 28px 0 0;
+            color: var(--muted);
+            font-size: 1.05rem;
+            line-height: 1.75;
+        }
+
+        .post-meta {
+            margin: 30px 0 0;
+            color: var(--muted);
+            font-size: 0.76rem;
+            font-weight: 700;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+        }
+
+        .topic-section {
+            padding: 6px 0 64px;
+        }
+
+        .topic-filter {
+            margin-top: 26px;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+
+        .topic-filter a {
+            padding: 10px 15px;
+            border: 1px solid var(--line);
+            background: transparent;
+            font-size: 0.76rem;
+            font-weight: 700;
+            letter-spacing: 0.06em;
+            text-transform: uppercase;
+            transition:
+                background 160ms ease,
+                color 160ms ease,
+                border-color 160ms ease;
+        }
+
+        .topic-filter a:hover {
+            background: var(--ink);
+            border-color: var(--ink);
+            color: var(--surface);
+        }
+
+        .archive-section {
+            padding: 14px 0 90px;
+            border-top: 1px solid var(--line);
+        }
+
+        .archive-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: end;
+            gap: 24px;
+            padding: 46px 0 32px;
+        }
+
+        .archive-label {
+            margin: 0;
+            color: var(--muted);
+            font-size: 0.78rem;
+            font-weight: 700;
+            letter-spacing: 0.09em;
+            text-transform: uppercase;
+        }
+
+        .editorial-grid {
+            display: grid;
+            grid-template-columns: repeat(12, minmax(0, 1fr));
+            gap: 34px 24px;
+        }
+
+        .post-card-link {
+            display: block;
+            grid-column: span 4;
+            background: var(--surface);
+            border-bottom: 3px solid transparent;
+            transition:
+                transform 180ms ease,
+                border-color 180ms ease,
+                box-shadow 180ms ease;
+        }
+
+        .post-card-link:nth-child(5n + 1),
+        .post-card-link:nth-child(5n + 2) {
+            grid-column: span 6;
+        }
+
+        .post-card-link:hover {
+            transform: translateY(-4px);
+            border-color: var(--accent);
+            box-shadow: 0 18px 40px rgba(23, 23, 22, 0.09);
+        }
+
+        .post-card {
+            height: 100%;
+        }
+
+        .card-media {
+            aspect-ratio: 4 / 3;
+            overflow: hidden;
+            background: var(--soft);
+        }
+
+        .post-card-link:nth-child(5n + 1) .card-media,
+        .post-card-link:nth-child(5n + 2) .card-media {
+            aspect-ratio: 16 / 10;
+        }
+
+        .card-media img {
+            height: 100%;
+            object-fit: cover;
+            transition: transform 400ms ease;
+        }
+
+        .post-card-link:hover .card-media img {
+            transform: scale(1.03);
+        }
+
+        .card-copy {
+            padding: 26px 26px 30px;
+        }
+
+        .card-category {
+            margin: 0 0 13px;
+            color: var(--accent);
+            font-size: 0.72rem;
+            font-weight: 800;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+        }
+
+        .card-title {
+            margin: 0;
+            font-family: var(--serif);
+            font-size: clamp(1.55rem, 2.4vw, 2.4rem);
+            font-weight: 400;
+            line-height: 1.08;
+            letter-spacing: -0.025em;
+        }
+
+        .card-excerpt {
+            margin: 17px 0 0;
+            color: var(--muted);
+            line-height: 1.7;
+        }
+
+        .card-date {
+            margin: 22px 0 0;
+            color: var(--muted);
+            font-size: 0.72rem;
+            font-weight: 700;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+        }
+
+        .site-footer {
+            background: var(--ink);
+            color: var(--surface);
+        }
+
+        .footer-grid {
+            width: min(calc(100% - 40px), var(--content-width));
+            margin: 0 auto;
+            padding: 60px 0 36px;
+            display: grid;
+            grid-template-columns: 1.4fr 1fr 1fr;
+            gap: 60px;
+        }
+
+        .footer-heading {
+            margin: 0 0 18px;
+            font-family: var(--serif);
+            font-size: 1.45rem;
+            font-weight: 400;
+        }
+
+        .footer-copy {
+            max-width: 420px;
+            margin: 0;
+            color: #bdb8af;
+            line-height: 1.75;
+        }
+
+        .footer-links {
+            display: grid;
+            gap: 10px;
+        }
+
+        .footer-links a {
+            color: #d9d5ce;
+            font-size: 0.88rem;
+        }
+
+        .footer-links a:hover {
+            color: #d9a48f;
+        }
+
+        .footer-bottom {
+            width: min(calc(100% - 40px), var(--content-width));
+            margin: 0 auto;
+            padding: 24px 0 30px;
+            border-top: 1px solid #363634;
+            color: #918d87;
+            font-size: 0.75rem;
+        }
+
+        .prose p {
+            margin-bottom: 1.25em;
+            line-height: 1.75;
+        }
+
+        @media (max-width: 980px) {
+            .masthead {
+                grid-template-columns: 1fr auto;
+                min-height: 80px;
+            }
+
+            .primary-nav {
+                grid-column: 1 / -1;
+                order: 3;
+                justify-content: flex-start;
+                padding-bottom: 18px;
+                overflow-x: auto;
+                white-space: nowrap;
+            }
+
+            .utility-nav {
+                gap: 14px;
+            }
+
+            .hero-article {
+                grid-template-columns: 1fr;
+            }
+
+            .hero-media {
+                min-height: 470px;
+            }
+
+            .post-card-link,
+            .post-card-link:nth-child(5n + 1),
+            .post-card-link:nth-child(5n + 2) {
+                grid-column: span 6;
+            }
+        }
+
+        @media (max-width: 680px) {
+            .masthead,
+            .page-shell,
+            .category-nav,
+            .footer-grid,
+            .footer-bottom {
+                width: min(calc(100% - 28px), var(--content-width));
+            }
+
+            .masthead {
+                gap: 16px;
+            }
+
+            .site-logo {
+                height: 34px;
+                max-width: 230px;
+            }
+
+            .utility-nav a:not(:last-child) {
+                display: none;
+            }
+
+            .primary-nav {
+                gap: 22px;
+            }
+
+            .category-nav {
+                justify-content: flex-start;
+                gap: 26px;
+            }
+
+            .hero-section {
+                padding: 28px 0 48px;
+            }
+
+            .hero-media {
+                min-height: 330px;
+            }
+
+            .hero-copy {
+                padding: 30px 24px 34px;
+            }
+
+            .hero-title {
+                font-size: clamp(2.5rem, 13vw, 4rem);
+            }
+
+            .archive-header {
+                display: block;
+            }
+
+            .archive-label {
+                margin-top: 12px;
+            }
+
+            .editorial-grid {
+                display: block;
+            }
+
+            .post-card-link {
+                margin-bottom: 28px;
+            }
+
+            .card-copy {
+                padding: 23px 21px 26px;
+            }
+
+            .footer-grid {
+                grid-template-columns: 1fr;
+                gap: 34px;
+                padding-top: 46px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header class="site-header">
+        <section class="masthead">
+            <a class="logo-link" href="index.html" aria-label="Ventoro Style homepage">
+                <img
+                    class="site-logo"
+                    src="images/ventorostyle-logo.png"
+                    alt="Ventoro Style"
+                >
+            </a>
+
+            <nav class="primary-nav" aria-label="Primary navigation">
+                <a href="index.html">Home</a>
+                <a href="#latest">Latest</a>
+                <a href="start-here.html">Start here</a>
+                <a href="aboutus.html">About</a>
+            </nav>
+
+            <nav class="utility-nav" aria-label="Editorial links">
+                <a href="editorial-policy.html">Editorial policy</a>
+                <a href="terms-privacy.html">Privacy</a>
+            </nav>
+        </section>
+
+        <nav class="category-bar" aria-label="Category navigation">
+            <section class="category-nav">
+                <a href="style.html">Style</a>
+                <a href="grooming.html">Grooming</a>
+                <a href="health-fitness.html">Health &amp; Fitness</a>
+                <a href="gear-tech.html">Gear &amp; Tech</a>
+                <a href="money-career.html">Money &amp; Career</a>
+                <a href="life.html">Life</a>
+            </section>
+        </nav>
+    </header>
+
+    <main>
+        
+
+        <section class="hero-section">
+            <section class="page-shell">
+                <a
+                    class="hero-link"
+                    href="blogs/exercise-safely-in-hot-weather.html"
+                    aria-label="Read How to Exercise Safely in Hot Weather"
+                >
+                    <article class="hero-article" data-category="Health & Fitness">
+                        <section class="hero-media">
+                            <img
+                                src="images/exercise-safely-in-hot-weather.jpg"
+                                alt="How to Exercise Safely in Hot Weather"
+                                fetchpriority="high"
+                            >
+                        </section>
+
+                        <section class="hero-copy">
+                            <p class="eyebrow">Health & Fitness</p>
+                            <h1 class="hero-title">How to Exercise Safely in Hot Weather</h1>
+                            <p class="hero-excerpt">Learn how to adjust exercise timing, intensity, clothing, hydration and expectations when training in hot or humid conditions.</p>
+                            <p class="post-meta">
+                                <time datetime="2026-06-19">
+                                    19. June 2026
+                                </time>
+                            </p>
+                        </section>
+                    </article>
+                </a>
+            </section>
+        </section>
+
+        <section class="topic-section" aria-labelledby="browse-topics">
+            <section class="page-shell">
+                <h2 class="section-heading" id="browse-topics">Read by topic</h2>
+                <p class="section-intro">
+                    Practical reporting and guides for dressing better, taking care
+                    of yourself, working with more purpose and making informed purchases.
+                </p>
+
+                <nav class="topic-filter" aria-label="Topic filters">
+                    <a href="style.html">Style</a>
+                    <a href="grooming.html">Grooming</a>
+                    <a href="health-fitness.html">Health &amp; Fitness</a>
+                    <a href="gear-tech.html">Gear &amp; Tech</a>
+                    <a href="money-career.html">Money &amp; Career</a>
+                    <a href="life.html">Life</a>
+                </nav>
+            </section>
+        </section>
+
+        <section class="archive-section" id="latest" aria-labelledby="latest-stories">
+            <section class="page-shell">
+                <header class="archive-header">
+                    <h2 class="section-heading" id="latest-stories">Latest stories</h2>
+                    <p class="archive-label">Ventoro Style editorial</p>
+                </header>
+
+                <section class="editorial-grid">
+                    
+                    <a
+                        class="post-card-link"
+                        href="blogs/simple-summer-skincare-routine-for-men.html"
+                        aria-label="Read A Simple Summer Skincare Routine for Men"
+                    >
+                        <article class="post-card" data-category="Grooming">
+                            <section class="card-media">
+                                <img
+                                    src="images/simple-summer-skincare-routine-for-men.jpg"
+                                    alt="A Simple Summer Skincare Routine for Men"
+                                    loading="lazy"
+                                >
+                            </section>
+
+                            <section class="card-copy">
+                                <p class="card-category">Grooming</p>
+                                <h2 class="card-title">A Simple Summer Skincare Routine for Men</h2>
+                                <p class="card-excerpt">A practical summer skincare routine built around gentle cleansing, suitable moisturising and reliable sun protection without unnecessary products.</p>
+                                <p class="card-date">
+                                    <time datetime="2026-06-11">
+                                        11. June 2026
+                                    </time>
+                                </p>
+                            </section>
+                        </article>
+                    </a>
+                    
+                    <a
+                        class="post-card-link"
+                        href="blogs/mens-summer-capsule-wardrobe.html"
+                        aria-label="Read How to Build a Men’s Summer Capsule Wardrobe"
+                    >
+                        <article class="post-card" data-category="Style">
+                            <section class="card-media">
+                                <img
+                                    src="images/mens-summer-capsule-wardrobe.jpg"
+                                    alt="How to Build a Men’s Summer Capsule Wardrobe"
+                                    loading="lazy"
+                                >
+                            </section>
+
+                            <section class="card-copy">
+                                <p class="card-category">Style</p>
+                                <h2 class="card-title">How to Build a Men’s Summer Capsule Wardrobe</h2>
+                                <p class="card-excerpt">A summer capsule wardrobe is a small group of clothes that work together repeatedly without making every outfit look identical. The goal is to reduce daily friction and build outfits that suit your real routine.</p>
+                                <p class="card-date">
+                                    <time datetime="2026-06-04">
+                                        04. June 2026
+                                    </time>
+                                </p>
+                            </section>
+                        </article>
+                    </a>
+                    
+                </section>
+            </section>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <section class="footer-grid">
+            <section>
+                <h2 class="footer-heading">Ventoro Style</h2>
+                <p class="footer-copy">
+                    An independent men’s lifestyle publication covering personal style,
+                    grooming, health, technology, work and practical modern living.
+                </p>
+            </section>
+
+            <nav class="footer-links" aria-label="Footer categories">
+                <a href="style.html">Style</a>
+                <a href="grooming.html">Grooming</a>
+                <a href="health-fitness.html">Health &amp; Fitness</a>
+                <a href="gear-tech.html">Gear &amp; Tech</a>
+                <a href="money-career.html">Money &amp; Career</a>
+                <a href="life.html">Life</a>
+            </nav>
+
+            <nav class="footer-links" aria-label="Footer information">
+                <a href="start-here.html">Start here</a>
+                <a href="aboutus.html">About us</a>
+                <a href="editorial-policy.html">Editorial policy</a>
+                <a href="terms-privacy.html">Terms and privacy</a>
+            </nav>
+        </section>
+
+        <section class="footer-bottom">
+            © 2026 Ventoro Style. All rights reserved.
+        </section>
+    </footer>
+</body>
+</html>

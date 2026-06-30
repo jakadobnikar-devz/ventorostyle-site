@@ -1,0 +1,29 @@
+[
+  {
+    "title": "How to Build a Men’s Summer Capsule Wardrobe",
+    "date": "2026-06-04",
+    "excerpt": "A summer capsule wardrobe is a small group of clothes that work together repeatedly without making every outfit look identical. The goal is to reduce daily friction and build outfits that suit your real routine.",
+    "image": "mens-summer-capsule-wardrobe.jpg",
+    "url": "blogs/mens-summer-capsule-wardrobe.html",
+    "slug": "mens-summer-capsule-wardrobe",
+    "category": "Style"
+  },
+  {
+    "title": "A Simple Summer Skincare Routine for Men",
+    "date": "2026-06-11",
+    "excerpt": "A practical summer skincare routine built around gentle cleansing, suitable moisturising and reliable sun protection without unnecessary products.",
+    "image": "simple-summer-skincare-routine-for-men.jpg",
+    "url": "blogs/simple-summer-skincare-routine-for-men.html",
+    "slug": "simple-summer-skincare-routine-for-men",
+    "category": "Grooming"
+  },
+  {
+    "title": "How to Exercise Safely in Hot Weather",
+    "date": "2026-06-19",
+    "excerpt": "Learn how to adjust exercise timing, intensity, clothing, hydration and expectations when training in hot or humid conditions.",
+    "image": "exercise-safely-in-hot-weather.jpg",
+    "url": "blogs/exercise-safely-in-hot-weather.html",
+    "slug": "exercise-safely-in-hot-weather",
+    "category": "Health & Fitness"
+  }
+]

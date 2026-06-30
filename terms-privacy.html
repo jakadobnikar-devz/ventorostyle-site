@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Terms and Privacy | Ventoro Style</title>
+    <meta
+        name="description"
+        content="Read the Ventoro Style terms of use, privacy statement and general editorial disclaimers."
+    >
+
+    <link rel="canonical" href="https://ventorostyle.com/terms-privacy.html">
+
+    <style>
+        :root {
+            --paper: #f4f1ea;
+            --surface: #ffffff;
+            --ink: #171716;
+            --muted: #6e6a63;
+            --accent: #8b4a34;
+            --line: #d8d1c5;
+            --serif: Georgia, "Times New Roman", serif;
+            --sans: Arial, Helvetica, sans-serif;
+            --content-width: 1240px;
+            --reading-width: 780px;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            background: var(--paper);
+            color: var(--ink);
+            font-family: var(--sans);
+            line-height: 1.6;
+        }
+
+        img {
+            display: block;
+            width: 100%;
+            height: auto;
+        }
+
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        a:focus-visible {
+            outline: 3px solid var(--accent);
+            outline-offset: 4px;
+        }
+
+        .site-header {
+            background: var(--surface);
+            border-bottom: 1px solid var(--line);
+        }
+
+        .masthead {
+            width: min(calc(100% - 40px), var(--content-width));
+            margin: 0 auto;
+            min-height: 92px;
+            display: grid;
+            grid-template-columns: auto 1fr auto;
+            align-items: center;
+            gap: 34px;
+        }
+
+        .logo-link {
+            display: inline-flex;
+            align-items: center;
+        }
+
+        .site-logo {
+            width: auto;
+            height: 43px;
+            max-width: 310px;
+            object-fit: contain;
+        }
+
+        .primary-nav,
+        .utility-nav,
+        .category-nav {
+            display: flex;
+            align-items: center;
+        }
+
+        .primary-nav {
+            justify-content: center;
+            gap: 30px;
+        }
+
+        .utility-nav {
+            justify-content: flex-end;
+            gap: 18px;
+        }
+
+        .primary-nav a,
+        .utility-nav a {
+            font-size: 0.78rem;
+            font-weight: 700;
+            letter-spacing: 0.09em;
+            text-transform: uppercase;
+        }
+
+        .primary-nav a:hover,
+        .utility-nav a:hover {
+            color: var(--accent);
+        }
+
+        .category-bar {
+            background: var(--ink);
+            color: var(--surface);
+        }
+
+        .category-nav {
+            width: min(calc(100% - 40px), var(--content-width));
+            margin: 0 auto;
+            min-height: 48px;
+            justify-content: center;
+            gap: 36px;
+            overflow-x: auto;
+            white-space: nowrap;
+            scrollbar-width: none;
+        }
+
+        .category-nav::-webkit-scrollbar {
+            display: none;
+        }
+
+        .category-nav a {
+            padding: 14px 0;
+            font-size: 0.78rem;
+            font-weight: 700;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+        }
+
+        .category-nav a:hover {
+            color: #d9a48f;
+        }
+
+        .page-header {
+            background: var(--ink);
+            color: var(--surface);
+        }
+
+        .page-header-inner {
+            width: min(calc(100% - 40px), 900px);
+            margin: 0 auto;
+            padding: 95px 0;
+        }
+
+        .page-kicker {
+            margin: 0 0 20px;
+            color: #d9a48f;
+            font-size: 0.76rem;
+            font-weight: 800;
+            letter-spacing: 0.14em;
+            text-transform: uppercase;
+        }
+
+        .page-title {
+            margin: 0;
+            font-family: var(--serif);
+            font-size: clamp(3rem, 7vw, 6rem);
+            font-weight: 400;
+            line-height: 0.98;
+            letter-spacing: -0.05em;
+        }
+
+        .updated-date {
+            margin: 24px 0 0;
+            color: #aaa69f;
+            font-size: 0.78rem;
+            font-weight: 700;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+        }
+
+        .content-shell {
+            width: min(calc(100% - 40px), var(--reading-width));
+            margin: 0 auto;
+            padding: 74px 0 100px;
+        }
+
+        .prose {
+            font-family: var(--serif);
+            font-size: 1.07rem;
+        }
+
+        .prose p {
+            margin-bottom: 1.25em;
+            line-height: 1.75;
+        }
+
+        .prose h2 {
+            margin: 2.1em 0 0.65em;
+            font-size: clamp(1.9rem, 4vw, 2.7rem);
+            font-weight: 400;
+            line-height: 1.12;
+            letter-spacing: -0.025em;
+        }
+
+        .prose ul {
+            margin: 1em 0 1.6em;
+            padding-left: 1.4em;
+        }
+
+        .prose li {
+            margin-bottom: 0.7em;
+            line-height: 1.7;
+        }
+
+        .notice {
+            margin: 0 0 40px;
+            padding: 25px 28px;
+            background: var(--surface);
+            border-left: 4px solid var(--accent);
+        }
+
+        .notice strong {
+            display: block;
+            margin-bottom: 8px;
+            font-family: var(--sans);
+            font-size: 0.8rem;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+        }
+
+        .site-footer {
+            background: var(--ink);
+            color: var(--surface);
+        }
+
+        .footer-grid {
+            width: min(calc(100% - 40px), var(--content-width));
+            margin: 0 auto;
+            padding: 60px 0 36px;
+            display: grid;
+            grid-template-columns: 1.4fr 1fr 1fr;
+            gap: 60px;
+        }
+
+        .footer-heading {
+            margin: 0 0 18px;
+            font-family: var(--serif);
+            font-size: 1.45rem;
+            font-weight: 400;
+        }
+
+        .footer-copy {
+            max-width: 420px;
+            margin: 0;
+            color: #bdb8af;
+            line-height: 1.75;
+        }
+
+        .footer-links {
+            display: grid;
+            gap: 10px;
+        }
+
+        .footer-links a {
+            color: #d9d5ce;
+            font-size: 0.88rem;
+        }
+
+        .footer-links a:hover {
+            color: #d9a48f;
+        }
+
+        .footer-bottom {
+            width: min(calc(100% - 40px), var(--content-width));
+            margin: 0 auto;
+            padding: 24px 0 30px;
+            border-top: 1px solid #363634;
+            color: #918d87;
+            font-size: 0.75rem;
+        }
+
+        @media (max-width: 900px) {
+            .masthead {
+                grid-template-columns: 1fr auto;
+                min-height: 80px;
+            }
+
+            .primary-nav {
+                grid-column: 1 / -1;
+                order: 3;
+                justify-content: flex-start;
+                padding-bottom: 18px;
+                overflow-x: auto;
+                white-space: nowrap;
+            }
+        }
+
+        @media (max-width: 680px) {
+            .masthead,
+            .category-nav,
+            .page-header-inner,
+            .content-shell,
+            .footer-grid,
+            .footer-bottom {
+                width: min(calc(100% - 28px), var(--content-width));
+            }
+
+            .site-logo {
+                height: 34px;
+                max-width: 230px;
+            }
+
+            .utility-nav a:not(:last-child) {
+                display: none;
+            }
+
+            .primary-nav {
+                gap: 22px;
+            }
+
+            .category-nav {
+                justify-content: flex-start;
+                gap: 26px;
+            }
+
+            .page-header-inner {
+                padding: 70px 0;
+            }
+
+            .content-shell {
+                padding: 52px 0 75px;
+            }
+
+            .footer-grid {
+                grid-template-columns: 1fr;
+                gap: 34px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header class="site-header">
+        <section class="masthead">
+            <a class="logo-link" href="index.html" aria-label="Ventoro Style homepage">
+                <img
+                    class="site-logo"
+                    src="images/ventorostyle-logo.png"
+                    alt="Ventoro Style"
+                >
+            </a>
+
+            <nav class="primary-nav" aria-label="Primary navigation">
+                <a href="index.html">Home</a>
+                <a href="index.html#latest">Latest</a>
+                <a href="start-here.html">Start here</a>
+                <a href="aboutus.html">About</a>
+            </nav>
+
+            <nav class="utility-nav" aria-label="Editorial links">
+                <a href="editorial-policy.html">Editorial policy</a>
+                <a href="terms-privacy.html" aria-current="page">Privacy</a>
+            </nav>
+        </section>
+
+        <nav class="category-bar" aria-label="Category navigation">
+            <section class="category-nav">
+                <a href="style.html">Style</a>
+                <a href="grooming.html">Grooming</a>
+                <a href="health-fitness.html">Health &amp; Fitness</a>
+                <a href="gear-tech.html">Gear &amp; Tech</a>
+                <a href="money-career.html">Money &amp; Career</a>
+                <a href="life.html">Life</a>
+            </section>
+        </nav>
+    </header>
+
+    <main>
+        <header class="page-header">
+            <section class="page-header-inner">
+                <p class="page-kicker">Site information</p>
+                <h1 class="page-title">Terms and privacy</h1>
+                <p class="updated-date">Last updated: 24 June 2026</p>
+            </section>
+        </header>
+
+        <article class="content-shell prose">
+            <section class="notice">
+                <strong>Plain-language summary</strong>
+                Ventoro Style does not use visitor accounts, contact forms, cookies,
+                advertising trackers, analytics scripts or tracking pixels. We do not
+                intentionally collect or store personal data through this website.
+            </section>
+
+            <h2>1. About these terms</h2>
+
+            <p>
+                These terms apply to the use of ventorostyle.com and all articles,
+                guides and other editorial material published on the website. By using
+                the website, you agree to use it lawfully and responsibly.
+            </p>
+
+            <p>
+                Ventoro Style may update these terms when the website, its features or
+                applicable requirements change. The date shown at the top of this page
+                identifies the latest published version.
+            </p>
+
+            <h2>2. Privacy statement</h2>
+
+            <p>
+                Ventoro Style is currently operated as a static informational website.
+                We do not provide user registration, user profiles, comment sections,
+                contact forms, newsletter forms or other features that require visitors
+                to submit personal information.
+            </p>
+
+            <p>
+                The website does not intentionally collect, store, sell or share personal
+                data. It does not use first-party cookies, behavioural advertising
+                cookies, analytics systems or tracking pixels.
+            </p>
+
+            <p>
+                The company providing website hosting or content delivery may process
+                limited technical server information, such as an IP address, browser
+                type, request time or requested page, as part of its security and
+                infrastructure operations. Such processing is controlled by the
+                relevant service provider and does not form part of a Ventoro Style
+                visitor database.
+            </p>
+
+            <h2>3. External links</h2>
+
+            <p>
+                Articles may link to third-party websites for reference, context or
+                additional information. Ventoro Style does not control the content,
+                security, availability, privacy practices or data processing methods
+                of external websites.
+            </p>
+
+            <p>
+                Opening an external link may allow the third-party website to collect
+                technical or personal information under its own terms and privacy
+                policy. Readers should review those policies directly.
+            </p>
+
+            <h2>4. Editorial and informational purpose</h2>
+
+            <p>
+                Content published on Ventoro Style is provided for general informational
+                and editorial purposes. Although reasonable efforts are made to present
+                accurate information, articles may become outdated, incomplete or
+                unsuitable for a reader’s specific circumstances.
+            </p>
+
+            <p>
+                Nothing published on this website creates a professional-client
+                relationship.
+            </p>
+
+            <h2>5. Health and fitness disclaimer</h2>
+
+            <p>
+                Health, nutrition, exercise, mental health and grooming content is
+                general educational information. It is not medical advice, diagnosis
+                or treatment.
+            </p>
+
+            <p>
+                Readers should consult a qualified healthcare professional before
+                changing medication, beginning a demanding exercise programme, making
+                substantial dietary changes or acting on information that could affect
+                a medical condition.
+            </p>
+
+            <h2>6. Money and career disclaimer</h2>
+
+            <p>
+                Content concerning personal finance, careers, employment, business or
+                productivity is general information. It does not constitute financial,
+                legal, tax, investment or employment advice.
+            </p>
+
+            <p>
+                Financial decisions involve individual circumstances and risk. Readers
+                should consult an appropriately qualified professional when necessary.
+            </p>
+
+            <h2>7. Product information</h2>
+
+            <p>
+                Product specifications, availability, prices and manufacturer claims
+                may change after publication. Readers should verify important details
+                with the manufacturer or retailer before purchasing.
+            </p>
+
+            <p>
+                A product mentioned in an article is not guaranteed to be suitable for
+                every reader. Recommendations should be treated as editorial guidance,
+                not as warranties of performance, quality or suitability.
+            </p>
+
+            <h2>8. Intellectual property</h2>
+
+            <p>
+                Unless otherwise stated, the original text, design, branding and
+                structure of Ventoro Style are protected by applicable copyright and
+                intellectual property laws.
+            </p>
+
+            <p>
+                Readers may share links to published pages and quote short passages with
+                clear attribution. Republishing complete articles, copying substantial
+                portions of the website or reproducing original visual assets requires
+                prior permission.
+            </p>
+
+            <h2>9. Availability and liability</h2>
+
+            <p>
+                Ventoro Style does not guarantee that the website will always be
+                available, error-free or free from technical problems. Access may be
+                interrupted for maintenance, hosting changes, security reasons or
+                circumstances outside the publisher’s control.
+            </p>
+
+            <p>
+                To the extent permitted by law, Ventoro Style is not liable for losses
+                arising from reliance on general editorial content, temporary website
+                unavailability, third-party links or decisions made based on information
+                published on the website.
+            </p>
+
+            <h2>10. Changes to the website</h2>
+
+            <p>
+                Ventoro Style may update, correct, remove or reorganise content without
+                prior notice. Categories, URLs, visual design and available features may
+                also change as the publication develops.
+            </p>
+        </article>
+    </main>
+
+    <footer class="site-footer">
+        <section class="footer-grid">
+            <section>
+                <h2 class="footer-heading">Ventoro Style</h2>
+                <p class="footer-copy">
+                    An independent men’s lifestyle publication covering personal style,
+                    grooming, health, technology, work and practical modern living.
+                </p>
+            </section>
+
+            <nav class="footer-links" aria-label="Footer categories">
+                <a href="style.html">Style</a>
+                <a href="grooming.html">Grooming</a>
+                <a href="health-fitness.html">Health &amp; Fitness</a>
+                <a href="gear-tech.html">Gear &amp; Tech</a>
+                <a href="money-career.html">Money &amp; Career</a>
+                <a href="life.html">Life</a>
+            </nav>
+
+            <nav class="footer-links" aria-label="Footer information">
+                <a href="start-here.html">Start here</a>
+                <a href="aboutus.html">About us</a>
+                <a href="editorial-policy.html">Editorial policy</a>
+                <a href="terms-privacy.html">Terms and privacy</a>
+            </nav>
+        </section>
+
+        <section class="footer-bottom">
+            © 2026 Ventoro Style. All rights reserved.
+        </section>
+    </footer>
+</body>
+</html>

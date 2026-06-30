@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>About Ventoro Style</title>
+    <meta
+        name="description"
+        content="Learn about Ventoro Style, an independent editorial publication covering men’s style, grooming, health, technology, careers and modern living."
+    >
+
+    <link rel="canonical" href="https://ventorostyle.com/aboutus.html">
+
+    <style>
+        :root {
+            --paper: #f4f1ea;
+            --surface: #ffffff;
+            --ink: #171716;
+            --muted: #6e6a63;
+            --accent: #8b4a34;
+            --line: #d8d1c5;
+            --soft: #ebe6dc;
+            --serif: Georgia, "Times New Roman", serif;
+            --sans: Arial, Helvetica, sans-serif;
+            --content-width: 1240px;
+            --reading-width: 760px;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            background: var(--paper);
+            color: var(--ink);
+            font-family: var(--sans);
+            line-height: 1.6;
+        }
+
+        img {
+            display: block;
+            width: 100%;
+            height: auto;
+        }
+
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        a:focus-visible {
+            outline: 3px solid var(--accent);
+            outline-offset: 4px;
+        }
+
+        .site-header {
+            background: var(--surface);
+            border-bottom: 1px solid var(--line);
+        }
+
+        .masthead {
+            width: min(calc(100% - 40px), var(--content-width));
+            margin: 0 auto;
+            min-height: 92px;
+            display: grid;
+            grid-template-columns: auto 1fr auto;
+            align-items: center;
+            gap: 34px;
+        }
+
+        .logo-link {
+            display: inline-flex;
+            align-items: center;
+        }
+
+        .site-logo {
+            width: auto;
+            height: 43px;
+            max-width: 310px;
+            object-fit: contain;
+        }
+
+        .primary-nav,
+        .utility-nav,
+        .category-nav {
+            display: flex;
+            align-items: center;
+        }
+
+        .primary-nav {
+            justify-content: center;
+            gap: 30px;
+        }
+
+        .utility-nav {
+            justify-content: flex-end;
+            gap: 18px;
+        }
+
+        .primary-nav a,
+        .utility-nav a {
+            font-size: 0.78rem;
+            font-weight: 700;
+            letter-spacing: 0.09em;
+            text-transform: uppercase;
+        }
+
+        .primary-nav a:hover,
+        .utility-nav a:hover {
+            color: var(--accent);
+        }
+
+        .category-bar {
+            background: var(--ink);
+            color: var(--surface);
+        }
+
+        .category-nav {
+            width: min(calc(100% - 40px), var(--content-width));
+            margin: 0 auto;
+            min-height: 48px;
+            justify-content: center;
+            gap: 36px;
+            overflow-x: auto;
+            white-space: nowrap;
+            scrollbar-width: none;
+        }
+
+        .category-nav::-webkit-scrollbar {
+            display: none;
+        }
+
+        .category-nav a {
+            padding: 14px 0;
+            font-size: 0.78rem;
+            font-weight: 700;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+        }
+
+        .category-nav a:hover {
+            color: #d9a48f;
+        }
+
+        .page-hero {
+            background: var(--ink);
+            color: var(--surface);
+        }
+
+        .page-hero-inner {
+            width: min(calc(100% - 40px), 980px);
+            margin: 0 auto;
+            padding: clamp(75px, 11vw, 150px) 0;
+            text-align: center;
+        }
+
+        .page-kicker {
+            margin: 0 0 24px;
+            color: #d9a48f;
+            font-size: 0.76rem;
+            font-weight: 800;
+            letter-spacing: 0.14em;
+            text-transform: uppercase;
+        }
+
+        .page-title {
+            margin: 0;
+            font-family: var(--serif);
+            font-size: clamp(3.4rem, 8vw, 7rem);
+            font-weight: 400;
+            line-height: 0.96;
+            letter-spacing: -0.055em;
+        }
+
+        .page-intro {
+            max-width: 700px;
+            margin: 32px auto 0;
+            color: #c5c0b8;
+            font-size: 1.13rem;
+            line-height: 1.75;
+        }
+
+        .content-shell {
+            width: min(calc(100% - 40px), var(--content-width));
+            margin: 0 auto;
+            padding: 80px 0 100px;
+        }
+
+        .mission-grid {
+            display: grid;
+            grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.2fr);
+            gap: 80px;
+            align-items: start;
+        }
+
+        .mission-label {
+            margin: 0;
+            color: var(--accent);
+            font-size: 0.76rem;
+            font-weight: 800;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+        }
+
+        .mission-title {
+            margin: 18px 0 0;
+            font-family: var(--serif);
+            font-size: clamp(2.2rem, 5vw, 4.2rem);
+            font-weight: 400;
+            line-height: 1.03;
+            letter-spacing: -0.04em;
+        }
+
+        .prose {
+            max-width: var(--reading-width);
+            font-family: var(--serif);
+            font-size: 1.08rem;
+        }
+
+        .prose p {
+            margin-bottom: 1.25em;
+            line-height: 1.75;
+        }
+
+        .prose h2 {
+            margin: 2em 0 0.65em;
+            font-size: 2rem;
+            font-weight: 400;
+            line-height: 1.15;
+        }
+
+        .principles-grid {
+            margin-top: 80px;
+            padding-top: 52px;
+            border-top: 1px solid var(--line);
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            gap: 24px;
+        }
+
+        .principle-card {
+            padding: 30px;
+            background: var(--surface);
+            border-top: 4px solid var(--accent);
+        }
+
+        .principle-number {
+            margin: 0 0 16px;
+            color: var(--accent);
+            font-size: 0.74rem;
+            font-weight: 800;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+        }
+
+        .principle-title {
+            margin: 0 0 14px;
+            font-family: var(--serif);
+            font-size: 1.65rem;
+            font-weight: 400;
+        }
+
+        .principle-copy {
+            margin: 0;
+            color: var(--muted);
+            line-height: 1.7;
+        }
+
+        .site-footer {
+            background: var(--ink);
+            color: var(--surface);
+        }
+
+        .footer-grid {
+            width: min(calc(100% - 40px), var(--content-width));
+            margin: 0 auto;
+            padding: 60px 0 36px;
+            display: grid;
+            grid-template-columns: 1.4fr 1fr 1fr;
+            gap: 60px;
+        }
+
+        .footer-heading {
+            margin: 0 0 18px;
+            font-family: var(--serif);
+            font-size: 1.45rem;
+            font-weight: 400;
+        }
+
+        .footer-copy {
+            max-width: 420px;
+            margin: 0;
+            color: #bdb8af;
+            line-height: 1.75;
+        }
+
+        .footer-links {
+            display: grid;
+            gap: 10px;
+        }
+
+        .footer-links a {
+            color: #d9d5ce;
+            font-size: 0.88rem;
+        }
+
+        .footer-links a:hover {
+            color: #d9a48f;
+        }
+
+        .footer-bottom {
+            width: min(calc(100% - 40px), var(--content-width));
+            margin: 0 auto;
+            padding: 24px 0 30px;
+            border-top: 1px solid #363634;
+            color: #918d87;
+            font-size: 0.75rem;
+        }
+
+        @media (max-width: 900px) {
+            .masthead {
+                grid-template-columns: 1fr auto;
+                min-height: 80px;
+            }
+
+            .primary-nav {
+                grid-column: 1 / -1;
+                order: 3;
+                justify-content: flex-start;
+                padding-bottom: 18px;
+                overflow-x: auto;
+                white-space: nowrap;
+            }
+
+            .mission-grid {
+                grid-template-columns: 1fr;
+                gap: 40px;
+            }
+
+            .principles-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (max-width: 680px) {
+            .masthead,
+            .category-nav,
+            .page-hero-inner,
+            .content-shell,
+            .footer-grid,
+            .footer-bottom {
+                width: min(calc(100% - 28px), var(--content-width));
+            }
+
+            .site-logo {
+                height: 34px;
+                max-width: 230px;
+            }
+
+            .utility-nav a:not(:last-child) {
+                display: none;
+            }
+
+            .primary-nav {
+                gap: 22px;
+            }
+
+            .category-nav {
+                justify-content: flex-start;
+                gap: 26px;
+            }
+
+            .page-title {
+                font-size: clamp(3rem, 15vw, 5rem);
+            }
+
+            .content-shell {
+                padding: 55px 0 75px;
+            }
+
+            .footer-grid {
+                grid-template-columns: 1fr;
+                gap: 34px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header class="site-header">
+        <section class="masthead">
+            <a class="logo-link" href="index.html" aria-label="Ventoro Style homepage">
+                <img
+                    class="site-logo"
+                    src="images/ventorostyle-logo.png"
+                    alt="Ventoro Style"
+                >
+            </a>
+
+            <nav class="primary-nav" aria-label="Primary navigation">
+                <a href="index.html">Home</a>
+                <a href="index.html#latest">Latest</a>
+                <a href="start-here.html">Start here</a>
+                <a href="aboutus.html" aria-current="page">About</a>
+            </nav>
+
+            <nav class="utility-nav" aria-label="Editorial links">
+                <a href="editorial-policy.html">Editorial policy</a>
+                <a href="terms-privacy.html">Privacy</a>
+            </nav>
+        </section>
+
+        <nav class="category-bar" aria-label="Category navigation">
+            <section class="category-nav">
+                <a href="style.html">Style</a>
+                <a href="grooming.html">Grooming</a>
+                <a href="health-fitness.html">Health &amp; Fitness</a>
+                <a href="gear-tech.html">Gear &amp; Tech</a>
+                <a href="money-career.html">Money &amp; Career</a>
+                <a href="life.html">Life</a>
+            </section>
+        </nav>
+    </header>
+
+    <main>
+        <header class="page-hero">
+            <section class="page-hero-inner">
+                <p class="page-kicker">About the publication</p>
+                <h1 class="page-title">Useful ideas for modern men.</h1>
+                <p class="page-intro">
+                    Ventoro Style is an independent editorial publication focused on
+                    personal style, grooming, physical and mental health, useful
+                    technology, working life and everyday decisions.
+                </p>
+            </section>
+        </header>
+
+        <section class="content-shell">
+            <section class="mission-grid">
+                <header>
+                    <p class="mission-label">Our purpose</p>
+                    <h2 class="mission-title">
+                        Practical guidance without the performance.
+                    </h2>
+                </header>
+
+                <article class="prose">
+                    <p>
+                        Ventoro Style was created for readers who want informed advice
+                        without exaggerated promises, status-driven messaging or
+                        artificial definitions of masculinity.
+                    </p>
+
+                    <p>
+                        The publication covers six connected areas: Style, Grooming,
+                        Health &amp; Fitness, Gear &amp; Tech, Money &amp; Career and
+                        Life. Each section addresses decisions that affect how men
+                        present themselves, take care of themselves, work and spend
+                        their time.
+                    </p>
+
+                    <p>
+                        Our articles aim to be clear, useful and realistic. A style
+                        guide should help a reader choose clothing that fits properly.
+                        A grooming article should explain what is necessary and what is
+                        optional. A product guide should identify meaningful differences
+                        instead of repeating marketing claims.
+                    </p>
+
+                    <h2>What Ventoro Style avoids</h2>
+
+                    <p>
+                        We do not publish fabricated success stories, aggressive
+                        self-improvement rhetoric or content designed to make readers
+                        feel inadequate. Expensive products are not treated as
+                        automatically better, and trends are not presented as rules.
+                    </p>
+
+                    <p>
+                        Health and financial topics are handled carefully. Articles may
+                        provide general education, but they do not replace qualified
+                        medical, legal or financial advice.
+                    </p>
+                </article>
+            </section>
+
+            <section class="principles-grid" aria-label="Editorial principles">
+                <article class="principle-card">
+                    <p class="principle-number">Principle 01</p>
+                    <h2 class="principle-title">Useful first</h2>
+                    <p class="principle-copy">
+                        Every article should answer a real question, explain a decision
+                        or help the reader avoid a common mistake.
+                    </p>
+                </article>
+
+                <article class="principle-card">
+                    <p class="principle-number">Principle 02</p>
+                    <h2 class="principle-title">Clear reasoning</h2>
+                    <p class="principle-copy">
+                        Recommendations should explain the criteria, limitations and
+                        trade-offs behind the conclusion.
+                    </p>
+                </article>
+
+                <article class="principle-card">
+                    <p class="principle-number">Principle 03</p>
+                    <h2 class="principle-title">No forced identity</h2>
+                    <p class="principle-copy">
+                        The site does not define one correct way to dress, work, train,
+                        build relationships or live.
+                    </p>
+                </article>
+            </section>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <section class="footer-grid">
+            <section>
+                <h2 class="footer-heading">Ventoro Style</h2>
+                <p class="footer-copy">
+                    An independent men’s lifestyle publication covering personal style,
+                    grooming, health, technology, work and practical modern living.
+                </p>
+            </section>
+
+            <nav class="footer-links" aria-label="Footer categories">
+                <a href="style.html">Style</a>
+                <a href="grooming.html">Grooming</a>
+                <a href="health-fitness.html">Health &amp; Fitness</a>
+                <a href="gear-tech.html">Gear &amp; Tech</a>
+                <a href="money-career.html">Money &amp; Career</a>
+                <a href="life.html">Life</a>
+            </nav>
+
+            <nav class="footer-links" aria-label="Footer information">
+                <a href="start-here.html">Start here</a>
+                <a href="aboutus.html">About us</a>
+                <a href="editorial-policy.html">Editorial policy</a>
+                <a href="terms-privacy.html">Terms and privacy</a>
+            </nav>
+        </section>
+
+        <section class="footer-bottom">
+            © 2026 Ventoro Style. All rights reserved.
+        </section>
+    </footer>
+</body>
+</html>
