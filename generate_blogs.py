@@ -65,16 +65,39 @@ def main(mode="obfuscated"):
         output_path = os.path.join("blogs", blog_filename)
 
         # Izris Jinja2 predloge (Kategorija se uspešno črpa iz JSON-a)
+        seo_title = blog.get("seo_title", title)
+        meta_description = blog.get("meta") or blog.get("excerpt", "")
+        canonical_url = f"https://ventorostyle.com/blogs/{real_slug}.html"
+        image_url = f"https://ventorostyle.com/images/{real_slug}.jpg"
+        schema_json = json.dumps({
+            "@context": "https://schema.org",
+            "@type": "Article",
+            "headline": title,
+            "description": meta_description,
+            "datePublished": date_str,
+            "mainEntityOfPage": canonical_url,
+            "image": image_url,
+            "publisher": {
+                "@type": "Organization",
+                "name": "Ventoro Style",
+                "url": "https://ventorostyle.com/"
+            }
+        }, ensure_ascii=False)
+
         rendered = detail_template.render(
             post={
                 "title": title,
+                "seo_title": seo_title,
                 "date": date_obj,
                 "image": real_slug + ".jpg",
                 "excerpt": blog.get("excerpt", ""),
+                "meta": meta_description,
                 "content": content,
-                "meta": blog.get("meta", ""),
-                "category": blog.get("category", "Zdravstvena politika"),
-                "slug": real_slug
+                "category": blog.get("category", "Health & Fitness"),
+                "slug": real_slug,
+                "canonical_url": canonical_url,
+                "image_url": image_url,
+                "schema_json": schema_json
             }
         )
 
@@ -87,8 +110,10 @@ def main(mode="obfuscated"):
 
         posts.append({
             "title": title,
+            "seo_title": seo_title,
             "date": date_str,
             "excerpt": blog.get("excerpt", ""),
+            "meta": meta_description,
             "image": real_slug + ".jpg",
             "url": f"blogs/{real_slug}.html",
             "slug": real_slug,

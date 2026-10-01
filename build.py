@@ -43,7 +43,6 @@ def main():
         "health-fitness",
         "life",
         "money-career",
-        "socialna-drzava",
         "style"
     ]
 

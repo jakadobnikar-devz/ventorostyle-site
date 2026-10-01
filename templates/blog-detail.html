@@ -4,9 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>{{ post.title }} | Ventoro Style</title>
-    <meta name="description" content="{{ post.excerpt }}">
-    <link rel="canonical" href="https://ventorostyle.com/blogs/{{ post.slug }}.html">
+    <title>{{ post.seo_title }} | Ventoro Style</title>
+    <meta name="description" content="{{ post.meta | e }}">
+    <link rel="canonical" href="{{ post.canonical_url }}">
+
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="{{ post.seo_title | e }} | Ventoro Style">
+    <meta property="og:description" content="{{ post.meta | e }}">
+    <meta property="og:url" content="{{ post.canonical_url }}">
+    <meta property="og:image" content="{{ post.image_url }}">
+    <meta property="og:site_name" content="Ventoro Style">
+
+    <script type="application/ld+json">{{ post.schema_json | safe }}</script>
 
     <style>
         :root {
@@ -494,7 +503,7 @@
 <body data-post-slug="{{ post.slug }}">
     <header class="site-header">
         <section class="masthead">
-            <a class="logo-link" href="../index.html" aria-label="Ventoro Style homepage">
+            <a class="logo-link" href="/" aria-label="Ventoro Style homepage">
                 <img
                     class="site-logo"
                     src="../images/ventorostyle-logo.png"
@@ -503,8 +512,8 @@
             </a>
 
             <nav class="primary-nav" aria-label="Primary navigation">
-                <a href="../index.html">Home</a>
-                <a href="../index.html#latest">Latest</a>
+                <a href="/">Home</a>
+                <a href="/#latest">Latest</a>
                 <a href="../start-here.html">Start here</a>
                 <a href="../aboutus.html">About</a>
             </nav>
@@ -531,13 +540,13 @@
         <article>
             <header class="article-header">
                 <section class="article-heading">
-                    <a class="back-link" href="../index.html">← Back to Ventoro Style</a>
+                    <a class="back-link" href="/">← Back to Ventoro Style</a>
                     <p class="category-badge">{{ post.category }}</p>
                     <h1 class="article-title">{{ post.title }}</h1>
                     <p class="article-deck">{{ post.excerpt }}</p>
                     <p class="article-date">
                         <time datetime="{{ post.date.strftime('%Y-%m-%d') }}">
-                            {{ post.date.strftime("%d. %B %Y") }}
+                            Published: {{ post.date.strftime("%d %B %Y") }}
                         </time>
                     </p>
                 </section>
@@ -560,7 +569,7 @@
                     </section>
 
                     <nav class="article-footer-nav" aria-label="Article navigation">
-                        <a href="../index.html">Return to all stories</a>
+                        <a href="/">Return to all stories</a>
                     </nav>
                 </section>
 

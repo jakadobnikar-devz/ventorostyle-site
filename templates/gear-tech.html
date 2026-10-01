@@ -13,6 +13,12 @@
 
     <link rel="canonical" href="https://ventorostyle.com/gear-tech.html">
 
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Men’s Gear and Technology | Ventoro Style">
+    <meta property="og:description" content="Guides and editorial coverage of useful technology, everyday gear, wearables, audio, home-office products and travel equipment.">
+    <meta property="og:url" content="https://ventorostyle.com/gear-tech.html">
+    <meta property="og:site_name" content="Ventoro Style">
+
     <style>
         :root {
             --paper: #f4f1ea;
@@ -477,7 +483,7 @@
 <body>
     <header class="site-header">
         <section class="masthead">
-            <a class="logo-link" href="index.html" aria-label="Ventoro Style homepage">
+            <a class="logo-link" href="/" aria-label="Ventoro Style homepage">
                 <img
                     class="site-logo"
                     src="images/ventorostyle-logo.png"
@@ -486,8 +492,8 @@
             </a>
 
             <nav class="primary-nav" aria-label="Primary navigation">
-                <a href="index.html">Home</a>
-                <a href="index.html#latest">Latest</a>
+                <a href="/">Home</a>
+                <a href="/#latest">Latest</a>
                 <a href="start-here.html">Start here</a>
                 <a href="aboutus.html">About</a>
             </nav>
@@ -558,7 +564,7 @@
                             <p class="card-excerpt">{{ post.excerpt }}</p>
                             <p class="card-date">
                                 <time datetime="{{ post.date.strftime('%Y-%m-%d') }}">
-                                    {{ post.date.strftime("%d. %B %Y") }}
+                                    {{ post.date.strftime("%d %B %Y") }}
                                 </time>
                             </p>
                         </section>
